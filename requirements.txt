@@ -1,4 +1,12 @@
 aiogram==2.25.1
 sqlalchemy>=2.0.0
 apscheduler>=3.10.1
-python-dotenv>=1.0.0 
+python-dotenv>=1.0.0
+
+# --- MySQL Driver (Choose and uncomment ONE) ---
+# Убедитесь, что нужный драйвер раскомментирован и установлен!
+# mysqlclient>=2.1.0 # Common, fast, might need build tools (like build-essential python3-dev libmysqlclient-dev)
+PyMySQL>=1.0.0   # Pure Python alternative, easier install (change URL prefix to mysql+pymysql in .env)
+
+# --- Other DB Drivers (Examples, keep commented if not used) ---
+# psycopg2-binary # For PostgreSQL

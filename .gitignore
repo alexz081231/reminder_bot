@@ -1,38 +1,29 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-env/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
+# --- Файл с секретами ---
+# КРИТИЧЕСКИ ВАЖНО НЕ ДОБАВЛЯТЬ .env В GITHUB!
+.env
 
-# Virtual Environment
+# --- Виртуальное окружение ---
+# Замените .venv на имя вашей папки, если оно другое (например, venv, env)
+.venv/
 venv/
-ENV/
+env/
 
-# IDE
+# --- Кэш Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Файлы IDE / Редакторов / ОС ---
 .idea/
 .vscode/
 *.swp
 *.swo
+.DS_Store
 
-# Project specific
-*.db
+# --- Файлы баз данных (если вдруг использовали SQLite ранее) ---
 *.sqlite3
-.env
-config.ini 
+*.db
+
+# --- Лог-файлы (если настроите запись в файлы) ---
+*.log
